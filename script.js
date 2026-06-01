@@ -1,21 +1,19 @@
-// 滚动隐藏导航
-let lastScroll = 0;
 const navbar = document.getElementById("navbar");
+let lastScroll = 0;
 
-window.addEventListener("scroll", function () {
-  const currentScroll = window.scrollY;
+window.addEventListener("scroll", () => {
+  const current = window.scrollY;
 
-  if (currentScroll > lastScroll && currentScroll > 80) {
+  if (current > lastScroll && current > 80) {
     navbar.style.transform = "translateY(-100%)";
   } else {
     navbar.style.transform = "translateY(0)";
   }
 
-  lastScroll = currentScroll;
+  lastScroll = current;
 });
 
-
-// 🔥 汉堡菜单
+/* mobile menu */
 const hamburger = document.getElementById("hamburger");
 const mobileMenu = document.getElementById("mobileMenu");
 
