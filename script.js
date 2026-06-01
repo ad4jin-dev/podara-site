@@ -1,1 +1,1 @@
-console.log("PODARA video site loaded");
+console.log("PODARA final version loaded");
