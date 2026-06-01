@@ -1,7 +1,6 @@
 const navbar = document.getElementById("navbar");
 let lastScroll = 0;
 
-/* scroll hide */
 window.addEventListener("scroll", () => {
   const current = window.scrollY;
 
