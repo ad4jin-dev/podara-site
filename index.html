@@ -11,6 +11,7 @@
 
 <body>
 
+<!-- NAV -->
 <header class="nav" id="navbar">
 
   <div class="logo">PODARA</div>
@@ -23,6 +24,7 @@
 
   <a class="cta-btn desktop-cta" href="#contact">Get a Quote</a>
 
+  <!-- 🔥 汉堡按钮（确保存在） -->
   <div class="hamburger" id="hamburger">
     <span></span>
     <span></span>
@@ -42,7 +44,13 @@
 <!-- HERO -->
 <section class="hero">
 
-  <video class="hero-video" autoplay muted loop playsinline>
+  <!-- 🔥 视频（关键修复） -->
+  <video class="hero-video"
+         autoplay
+         muted
+         loop
+         playsinline
+         webkit-playsinline>
     <source src="./assets/hero.mp4" type="video/mp4">
   </video>
 
@@ -55,7 +63,7 @@
     </h1>
 
     <p class="hero-subtitle">
-      Smart acoustic pods & modern workplace solutions for people who create and perform
+      Smart acoustic pods & modern workplace solutions
     </p>
 
     <button class="primary">Explore PODARA S1</button>
@@ -63,24 +71,11 @@
 
 </section>
 
-<!-- CONTENT（解决“没有滚动”问题） -->
+<!-- CONTENT（确保可滚动） -->
 <section class="content">
-
-  <div class="block" id="products">
-    <h2>Products</h2>
-    <p>PODARA S1 focus pod</p>
-  </div>
-
-  <div class="block" id="solutions">
-    <h2>Solutions</h2>
-    <p>Workplace acoustic systems</p>
-  </div>
-
-  <div class="block" id="about">
-    <h2>About</h2>
-    <p>PODARA builds modern acoustic environments</p>
-  </div>
-
+  <div class="block" id="products"><h2>Products</h2></div>
+  <div class="block" id="solutions"><h2>Solutions</h2></div>
+  <div class="block" id="about"><h2>About</h2></div>
 </section>
 
 <script src="./script.js"></script>
