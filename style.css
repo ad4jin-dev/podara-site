@@ -4,9 +4,16 @@
   box-sizing: border-box;
 }
 
+/* ❗解决紫色 + 下划线 */
+a {
+  text-decoration: none;
+  color: #111;
+}
+
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial;
   color: #111;
+  overflow-x: hidden;
 }
 
 /* NAV */
@@ -14,54 +21,40 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 20px 100px;
+  padding: 20px 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: white;
   z-index: 1000;
+  transition: transform 0.3s ease;
 }
 
 .logo {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 600;
 }
 
 .menu {
   display: flex;
-  gap: 60px;
+  gap: 50px;
 }
 
 .menu a {
   font-size: 16px;
   font-weight: 500;
+  color: #111;
 }
 
+/* CTA */
 .cta-btn {
   border: 1px solid black;
-  padding: 10px 22px;
+  padding: 10px 20px;
   border-radius: 20px;
+  color: #111;
 }
 
-.desktop-cta {
-  display: block;
-}
-
-/* 汉堡按钮（默认隐藏） */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 2px;
-  background: black;
-}
-
-/* HERO */
+/* HERO（修复视频问题） */
 .hero {
   height: 100vh;
   position: relative;
@@ -78,37 +71,36 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0,0,0,0.4);
 }
 
 .hero-content {
   position: absolute;
   top: 35%;
-  left: 100px;
+  left: 80px;
   color: white;
 }
 
 .hero-title {
-  font-size: 72px;
+  font-size: 68px;
   line-height: 1.05;
-  max-width: 800px;
 }
 
 .hero-subtitle {
   font-size: 20px;
   margin-top: 20px;
-  max-width: 520px;
 }
 
-.primary {
-  margin-top: 30px;
-  padding: 14px 28px;
-  border: none;
-  background: white;
-  font-weight: 600;
+/* ❗解决不能滚动 */
+.content {
+  padding: 120px 80px;
 }
 
-/* 🔥 移动端 */
+.block {
+  margin-bottom: 80px;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
 
   .menu,
@@ -120,21 +112,17 @@ body {
     display: flex;
   }
 
-  .nav {
-    padding: 16px 20px;
+  .hero-title {
+    font-size: 34px;
   }
 
   .hero-content {
     left: 20px;
     right: 20px;
   }
-
-  .hero-title {
-    font-size: 34px;
-  }
 }
 
-/* 🔥 移动菜单 */
+/* MOBILE MENU */
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -144,14 +132,27 @@ body {
   background: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 40px;
   font-size: 24px;
-  transition: 0.4s ease;
+  transition: 0.4s;
   z-index: 999;
 }
 
 .mobile-menu.active {
   right: 0;
+}
+
+/* hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 2px;
+  background: black;
 }
