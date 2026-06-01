@@ -16,7 +16,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* 去掉紫色链接 */
+/* 链接 */
 a {
   text-decoration: none;
   color: inherit;
@@ -28,26 +28,20 @@ a {
   top: 0;
   width: 100%;
   padding: 18px 80px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   background: white;
   color: black;
-
   z-index: 1000;
-
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-/* LOGO */
 .logo {
   font-size: 22px;
   font-weight: 600;
 }
 
-/* MENU */
 .menu {
   display: flex;
   gap: 40px;
@@ -56,20 +50,12 @@ a {
 .menu a {
   font-size: 15px;
   color: #333;
-  transition: 0.3s;
 }
 
-.menu a:hover {
-  color: black;
-}
-
-/* CTA按钮 */
 .cta-btn {
   border: 1px solid black;
   padding: 10px 18px;
   border-radius: 20px;
-  font-size: 14px;
-  transition: 0.3s;
 }
 
 .cta-btn:hover {
@@ -84,42 +70,44 @@ a {
   overflow: hidden;
 }
 
-/* 视频背景 */
 .hero-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   position: absolute;
-  animation: fadeIn 1.5s ease;
-}
-
-/* 渐显动画 */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
 
 .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.45);
 }
 
+/* 关键：文字布局 */
 .hero-content {
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 80px;
   color: white;
 }
 
-.hero h1 {
-  font-size: 60px;
-  margin-bottom: 20px;
+/* 主标题（重点优化） */
+.hero-title {
+  font-size: 68px;        /* 🔥 更大 */
+  font-weight: 500;
+  line-height: 1.05;      /* 🔥 更紧凑 */
+  max-width: 800px;
+  margin-bottom: 24px;
 }
 
-.hero p {
-  margin-bottom: 30px;
+/* 副标题 */
+.hero-subtitle {
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 520px;
+  margin-bottom: 40px;
+  opacity: 0.9;
 }
 
 /* 按钮 */
@@ -127,14 +115,8 @@ a {
   background: white;
   border: none;
   padding: 14px 28px;
-  cursor: pointer;
   font-weight: 600;
-  transition: 0.3s;
-}
-
-.primary:hover {
-  background: black;
-  color: white;
+  cursor: pointer;
 }
 
 /* PRODUCTS */
@@ -181,10 +163,6 @@ a {
   justify-content: space-between;
   padding: 100px 80px;
   background: #f7f7f7;
-}
-
-.feature {
-  max-width: 300px;
 }
 
 /* CTA */
