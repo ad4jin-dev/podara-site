@@ -40,18 +40,31 @@ a {
 }
 
 .logo {
-  font-size: 22px;
+  font-size: 26px;        /* 🔥 放大 */
   font-weight: 600;
+  letter-spacing: 0.5px;  /* 🔥 更有设计感 */
 }
 
-.menu {
-  display: flex;
-  gap: 40px;
+.menu a {
+  font-size: 16px;       /* 🔥 比之前大一点 */
+  font-weight: 500;
+  color: #222;
+  letter-spacing: 0.3px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: black;
 }
 
 .menu a {
   font-size: 15px;
   color: #333;
+}
+
+.menu {
+  display: flex;
+  gap: 50px;   /* 🔥 比之前更大，更高级 */
 }
 
 .cta-btn {
@@ -159,9 +172,11 @@ a {
 }
 
 /* CTA */
-.cta {
-  text-align: center;
-  padding: 120px;
-  background: black;
-  color: white;
+
+.cta-btn {
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
