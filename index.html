@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PODARA</title>
 
-  <!-- 🔥 Framery风格字体 -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="./style.css" />
 </head>
 
@@ -15,16 +13,34 @@
 
 <!-- NAV -->
 <header class="nav" id="navbar">
+
   <div class="logo">PODARA</div>
 
+  <!-- 桌面菜单 -->
   <nav class="menu">
     <a href="#products">Products</a>
     <a href="#solutions">Solutions</a>
     <a href="#contact">About</a>
   </nav>
 
-  <a href="#contact" class="cta-btn">Get a Quote</a>
+  <a href="#contact" class="cta-btn desktop-cta">Get a Quote</a>
+
+  <!-- 🔥 汉堡按钮 -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
 </header>
+
+<!-- 🔥 移动端菜单 -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#products">Products</a>
+  <a href="#solutions">Solutions</a>
+  <a href="#contact">About</a>
+  <a href="#contact">Get a Quote</a>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -37,7 +53,8 @@
 
   <div class="hero-content">
     <h1 class="hero-title">
-      Step into the new age of quiet productivity <br>
+      Welcome to the next era<br>
+      of focused workspaces
     </h1>
 
     <p class="hero-subtitle">
@@ -47,53 +64,6 @@
     <button class="primary">Explore PODARA S1</button>
   </div>
 
-</section>
-
-<!-- PRODUCTS -->
-<section class="products" id="products">
-  <h2>Smart pods for modern offices</h2>
-
-  <div class="grid">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76">
-      <div class="card-text">
-        <h3>PODARA S1</h3>
-        <p>Single-person focus pod</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1598300056393-4aac492f4344">
-      <div class="card-text">
-        <h3>Meeting Pod</h3>
-        <p>Coming soon</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FEATURES -->
-<section class="features" id="solutions">
-  <div class="feature">
-    <h3>Advanced acoustics</h3>
-    <p>Engineered for focus</p>
-  </div>
-
-  <div class="feature">
-    <h3>Smart ventilation</h3>
-    <p>Fresh airflow system</p>
-  </div>
-
-  <div class="feature">
-    <h3>Modern design</h3>
-    <p>Minimal & elegant</p>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta" id="contact">
-  <h2>Start your workspace upgrade</h2>
-  <button class="primary">Get a Quote</button>
 </section>
 
 <script src="./script.js"></script>
