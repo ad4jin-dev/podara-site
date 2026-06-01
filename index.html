@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PODARA</title>
 
-  <!-- ✅ 核心：CSS必须正确加载 -->
   <link rel="stylesheet" href="./style.css" />
 </head>
 
@@ -14,12 +13,14 @@
 <!-- NAV -->
 <header class="nav">
   <div class="logo">PODARA</div>
-  <nav>
+
+  <nav class="menu">
     <a href="#">Products</a>
     <a href="#">Solutions</a>
     <a href="#">About</a>
-    <a href="#" class="btn">Get Quote</a>
   </nav>
+
+  <a href="#" class="cta-btn">Get a Quote</a>
 </header>
 
 <!-- HERO -->
@@ -31,7 +32,7 @@
   <div class="hero-content">
     <h1>Modern acoustic solutions</h1>
     <p>For focused workspaces</p>
-    <button>Explore PODARA S1</button>
+    <button class="primary">Explore PODARA S1</button>
   </div>
 </section>
 
@@ -43,14 +44,18 @@
 
     <div class="card">
       <img src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76">
-      <h3>PODARA S1</h3>
-      <p>Single-person focus pod</p>
+      <div class="card-text">
+        <h3>PODARA S1</h3>
+        <p>Single-person focus pod</p>
+      </div>
     </div>
 
     <div class="card">
       <img src="https://images.unsplash.com/photo-1598300056393-4aac492f4344">
-      <h3>Meeting Pod</h3>
-      <p>Coming soon</p>
+      <div class="card-text">
+        <h3>Meeting Pod</h3>
+        <p>Coming soon</p>
+      </div>
     </div>
 
   </div>
@@ -58,15 +63,26 @@
 
 <!-- FEATURES -->
 <section class="features">
-  <div>Advanced acoustics</div>
-  <div>Smart ventilation</div>
-  <div>Modern design</div>
+  <div class="feature">
+    <h3>Advanced acoustics</h3>
+    <p>Engineered for focus</p>
+  </div>
+
+  <div class="feature">
+    <h3>Smart ventilation</h3>
+    <p>Fresh airflow system</p>
+  </div>
+
+  <div class="feature">
+    <h3>Modern design</h3>
+    <p>Minimal & elegant</p>
+  </div>
 </section>
 
 <!-- CTA -->
 <section class="cta">
   <h2>Start your workspace upgrade</h2>
-  <button>Get Quote</button>
+  <button class="primary">Get a Quote</button>
 </section>
 
 <script src="./script.js"></script>
