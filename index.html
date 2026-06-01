@@ -4,8 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PODARA</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- ✅ 核心：CSS必须正确加载 -->
+  <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
 
 <!-- NAV -->
@@ -21,28 +24,33 @@
 
 <!-- HERO -->
 <section class="hero">
+  <img class="hero-bg" src="https://images.unsplash.com/photo-1497366216548-37526070297c">
+
+  <div class="overlay"></div>
+
   <div class="hero-content">
-    <h1>Modern acoustic solutions for focused workspaces.</h1>
-    <p>Designed for productivity, built for modern offices.</p>
+    <h1>Modern acoustic solutions</h1>
+    <p>For focused workspaces</p>
     <button>Explore PODARA S1</button>
   </div>
 </section>
 
 <!-- PRODUCTS -->
 <section class="products">
-  <h2>Smart pods for every workspace</h2>
-  <div class="product-grid">
+  <h2>Smart pods for modern offices</h2>
+
+  <div class="grid">
 
     <div class="card">
-      <img src="https://via.placeholder.com/400x500"/>
+      <img src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76">
       <h3>PODARA S1</h3>
-      <p>Single-person acoustic pod</p>
+      <p>Single-person focus pod</p>
     </div>
 
     <div class="card">
-      <img src="https://via.placeholder.com/400x500"/>
-      <h3>Coming Soon</h3>
-      <p>Meeting pods</p>
+      <img src="https://images.unsplash.com/photo-1598300056393-4aac492f4344">
+      <h3>Meeting Pod</h3>
+      <p>Coming soon</p>
     </div>
 
   </div>
@@ -50,38 +58,18 @@
 
 <!-- FEATURES -->
 <section class="features">
-  <div class="feature">
-    <h3>Advanced acoustics</h3>
-    <p>Engineered for maximum sound isolation</p>
-  </div>
-
-  <div class="feature">
-    <h3>Smart ventilation</h3>
-    <p>Adaptive airflow system</p>
-  </div>
-
-  <div class="feature">
-    <h3>Modern design</h3>
-    <p>Clean and minimal aesthetics</p>
-  </div>
-</section>
-
-<!-- BRAND -->
-<section class="brand">
-  <h2>Built for modern work</h2>
-  <p>We design spaces that help people focus and perform.</p>
+  <div>Advanced acoustics</div>
+  <div>Smart ventilation</div>
+  <div>Modern design</div>
 </section>
 
 <!-- CTA -->
 <section class="cta">
   <h2>Start your workspace upgrade</h2>
-  <button>Get a Quote</button>
+  <button>Get Quote</button>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 PODARA</p>
-</footer>
+<script src="./script.js"></script>
 
 </body>
 </html>
